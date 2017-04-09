@@ -10,7 +10,7 @@ body {
 }
 
 /*----- Global Classes -----*/
-.title {
+.subheader {
   margin: 0;
   font-size: 10px;
   font-weight: 400;
@@ -97,7 +97,7 @@ body {
 .main {
   height: 100%;
 }
-.shares-tab {
+.tab-title {
   display: none;
 }
 .card-wrapper {
@@ -130,7 +130,7 @@ body {
   background-size: 100%;
   cursor: pointer;
 }
-.card-views {
+.card-views-container {
   z-index: 1;
   margin: 10px 10px 0 0;
   text-align: center;
@@ -270,7 +270,7 @@ background-image: url(../images/batgirl.jpg);
   }
 
   /*----- Main -----*/
-  .shares-tab {
+  .tab-title {
     display: block;
     margin: 0 0 0 40px;
     color: #555555;
@@ -297,7 +297,7 @@ background-image: url(../images/batgirl.jpg);
     height: 30px;
     margin-top: 5px;
   }
-  .card-views {
+  .card-views-container {
     margin-top: 5px;
   }
   .card-main {
