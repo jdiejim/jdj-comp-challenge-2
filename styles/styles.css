@@ -15,25 +15,40 @@ body {
 
 .card-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  /*height: 100%;*/
+  padding: 30px;
 }
 .card {
   /*background-color: orange;*/
-  height: 450;
+  height: 370px;
   box-shadow: 0 0 10px #777777;
+  margin: 10px;
+  width: 220px;
 }
 .card-header {
   /*background-color: blue;*/
   display: flex;
   justify-content: space-between;
-  height: 150px;
-  background-image: url(/images/batman1.jpg);
+  height: 130px;
+  background-image: url(/images/batman.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: black;
+  position: relative;
 }
-.card-reply-icon {
+.background-alpha {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  position: absolute;
+}
+
+.card-reply-icon {
+  background-color: #FFFFFF;
+  z-index: 1;
   border-radius: 50%;
   background-image: url(/assets/forward.svg);
   background-size: 70%;
@@ -41,10 +56,11 @@ body {
   background-repeat: no-repeat;
   margin-top: 5px;
   margin-left: 10px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .card-views {
+  z-index: 1;
   text-align: center;
   /*background-color: red;*/
   margin-top: 5px;
@@ -61,7 +77,7 @@ body {
   margin: 5px auto;
 }
 .card-name-container {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .card-name {
   margin: 0;
@@ -70,7 +86,7 @@ body {
 .card-date {
   color: #B7B8BA;
   margin: 0;
-  font-size: 12px;
+  font-size: 10px;
 }
 .card-link {
   /*background-color: #EFEFEF;
@@ -92,10 +108,10 @@ body {
   padding: 5px 10px;
   width: 100%;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .card-playlist-container {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .card-playlist {
   margin: 0;
@@ -108,7 +124,6 @@ body {
 }
 
 .card-footer {
-  margin-bottom: 10px;
 }
 .attachments {
   margin: 0;
@@ -120,4 +135,36 @@ body {
   font-weight: 300;
   font-size: 30px;
   color: #3ABAFE;
+}
+
+#card-1 .card-header {
+background-image: url(/images/batman.jpg);
+}
+
+#card-2 .card-header {
+background-image: url(/images/robin.jpg);
+}
+
+#card-3 .card-header {
+background-image: url(/images/catwoman.jpg);
+}
+
+#card-4 .card-header {
+background-image: url(/images/penguin.jpg);
+}
+
+#card-5 .card-header {
+background-image: url(/images/riddler.jpg);
+}
+
+#card-6 .card-header {
+background-image: url(/images/joker.jpg);
+}
+
+#card-7 .card-header {
+background-image: url(/images/freeze.jpg);
+}
+
+#card-8 .card-header {
+background-image: url(/images/batgirl.jpg);
 }
