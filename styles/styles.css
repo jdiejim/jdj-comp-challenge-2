@@ -18,43 +18,41 @@ body {
   flex-wrap: wrap;
   /*justify-content: space-between;*/
   /*height: 100%;*/
-  padding: 30px;
+  /*padding: 30px;*/
 }
 .card {
   /*background-color: orange;*/
-  height: 370px;
+  height: 200px;
   box-shadow: 0 0 10px #777777;
-  margin: 10px;
-  width: 220px;
+  margin: 5px;
+  width: 100%;
 }
 .card-header {
   /*background-color: blue;*/
   display: flex;
   justify-content: space-between;
-  height: 130px;
-  background-image: url(/images/batman.jpg);
+  height: 0;
+  /*background-image: url(/images/batman.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover;*/
   background-color: black;
   position: relative;
+  box-shadow: 0 0 10px #777777;
 }
 .background-alpha {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 100%;
-  position: absolute;
+  display: none;
 }
 
 .card-reply-icon {
-  background-color: #FFFFFF;
+  /*background-color: red;*/
   z-index: 1;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   background-image: url(/assets/forward.svg);
-  background-size: 70%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -63,7 +61,7 @@ body {
   z-index: 1;
   text-align: center;
   /*background-color: red;*/
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right: 10px;
 }
 .views-number {
@@ -72,69 +70,239 @@ body {
   font-size: 30px;
 }
 .card-main {
+  z-index: 2;
+  background-image: url(/images/batman.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   /*background-color: purple;*/
-  width: 90%;
-  margin: 5px auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 .card-name-container {
-  margin-bottom: 12px;
+  /*margin-bottom: 12px;*/
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2px 10px;
+  /*display: flex;
+  justify-content: space-between;*/
+  letter-spacing: 2px;
 }
 .card-name {
   margin: 0;
   font-weight: 400;
+  color: #FFFFFF;
 }
 .card-date {
-  color: #B7B8BA;
+  color: #FFFFFF;
   margin: 0;
+  align-self: center;
   font-size: 10px;
 }
 .card-link {
-  /*background-color: #EFEFEF;
-  height: 50px;
-  border-radius: 2px;
-  padding: 5px 10px;
-  width: 100%;*/
-}
-/* FIXME: refactor */
-.card-link {
-  width: 100%;
-  color: #939393;
-  font-size: 12px;
-  word-break: break-all;
-  text-decoration: none;
-  background-color: #EFEFEF;
-  height: 50px;
-  border-radius: 2px;
-  padding: 5px 10px;
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 12px;
+  display: none;
 }
 .card-playlist-container {
-  margin-bottom: 12px;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
 }
+.card-playlist-container:hover {
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .card-playlist {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 400;
+  display: none;
 }
 .card-playlist-name {
   margin: 0;
   font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin: 20px 0 0;
 }
 
-.card-footer {
-}
 .attachments {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 400;
+  display: none;
 }
 .attachments-number {
-  margin: 0;
-  font-weight: 300;
-  font-size: 30px;
-  color: #3ABAFE;
+  display: none;
+}
+
+#card-1 .card-main {
+background-image: url(/images/batman.jpg);
+}
+
+#card-2 .card-main {
+background-image: url(/images/robin.jpg);
+}
+
+#card-3 .card-main {
+background-image: url(/images/catwoman.jpg);
+}
+
+#card-4 .card-main {
+background-image: url(/images/penguin.jpg);
+}
+
+#card-5 .card-main {
+background-image: url(/images/riddler.jpg);
+}
+
+#card-6 .card-main {
+background-image: url(/images/joker.jpg);
+}
+
+#card-7 .card-main {
+background-image: url(/images/freeze.jpg);
+}
+
+#card-8 .card-main {
+background-image: url(/images/batgirl.jpg);
+}
+
+
+
+@media (min-width: 420px) {
+  title {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    /*height: 100%;*/
+    padding: 30px;
+  }
+  .card {
+    /*background-color: orange;*/
+    height: 370px;
+    box-shadow: 0 0 10px #777777;
+    margin: 10px;
+    width: 220px;
+  }
+  .card-header {
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    background-image: url(/images/batman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+  }
+  .background-alpha {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    position: absolute;
+  }
+
+  .card-reply-icon {
+    /*background-color: red;*/
+    z-index: 1;
+    /*border-radius: 50%;*/
+    background-image: url(/assets/forward.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .card-views {
+    z-index: 1;
+    text-align: center;
+    /*background-color: red;*/
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  .views-number {
+    margin: -8px 0 0;
+    font-weight: 300;
+    font-size: 30px;
+  }
+  .card-main {
+    /*background-color: purple;*/
+    width: 90%;
+    margin: 5px auto;
+  }
+  .card-name-container {
+    margin-bottom: 12px;
+  }
+  .card-name {
+    margin: 0;
+    font-weight: 400;
+  }
+  .card-date {
+    color: #B7B8BA;
+    margin: 0;
+    font-size: 10px;
+  }
+  .card-link {
+    /*background-color: #EFEFEF;
+    height: 50px;
+    border-radius: 2px;
+    padding: 5px 10px;
+    width: 100%;*/
+  }
+  /* FIXME: refactor */
+  .card-link {
+    width: 100%;
+    color: #939393;
+    font-size: 12px;
+    word-break: break-all;
+    text-decoration: none;
+    background-color: #EFEFEF;
+    height: 50px;
+    border-radius: 2px;
+    padding: 5px 10px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .card-playlist-container {
+    margin-bottom: 12px;
+  }
+  .card-playlist {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .card-playlist-name {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .card-footer {
+  }
+  .attachments {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .attachments-number {
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+    color: #3ABAFE;
+  }
+
 }
 
 #card-1 .card-header {
