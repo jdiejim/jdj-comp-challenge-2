@@ -113,10 +113,6 @@ body {
   position: relative;
   box-shadow: 0 0 10px #777777;
 }
-.background-alpha {
-  display: none;
-}
-
 .card-reply-icon {
   z-index: 1;
   background-image: url(../assets/share-arrow.svg);
@@ -303,14 +299,6 @@ background-image: url(../images/batgirl.jpg);
     background-size: cover;
     box-shadow: none;
   }
-  .background-alpha {
-    display: block;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 100%;
-    position: absolute;
-  }
-
   .card-reply-icon {
     margin-top: 5px;
     width: 30px;
