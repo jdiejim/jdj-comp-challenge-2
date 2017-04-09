@@ -25,46 +25,35 @@ body {
   background-position: 0px, 125px;
   background-size: 15px;
   background-repeat: no-repeat;
-  margin: 0;
+  margin: 10px 0 0 0;
   font-size: 12px;
   padding: 0 30px 0 20px;
 }
 .nav {
   display: flex;
-  /*flex-wrap: wrap;*/
   justify-content: space-between;
-  /*margin-bottom: 40px;*/
 }
 .nav-tabs {
-  /*margin: 0;*/
   display: flex;
   width: 70%;
-  /*justify-content: space-between;*/
   align-items: flex-start;
   justify-content: space-between;
   height: 100px;
-  /*justify-content: center;*/
-  /*flex-wrap: wrap;*/
-  /*padding: 0 0 0 10px;*/
   flex-direction: column;
   margin-left: 10px;
-  /*background-color: red;*/
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .tab {
   text-align: right;
   color: #777777;
   margin: 0;
   display: inline-block;
-  /*width: 33.3333%;*/
   width: 110px;
   text-transform: uppercase;
   font-size: 16px;
-  /*height: 100px;*/
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 0px;
-  /*padding: 0 0 0 10px;*/
   background-position: 1px;
 }
 
@@ -72,25 +61,19 @@ body {
 #shares {
   background-image: url(/assets/share-icon.svg);
   color: white;
-  /*flex: 1;*/
 }
 #playlists {
   background-image: url(/assets/list.svg);
-  /*flex: 1.5;*/
 }
 #videos {
   background-image: url(/assets/batman.svg);
-  /*flex: 1;*/
 }
 
 .logo {
-  /*width: 25%;*/
   width: 100px;
   height: 80px;
-  /*border: 1px solid red;*/
   align-self: center;
   margin: 0;
-  /*display:block;*/
   text-indent:-9999px;
   background:url(/images/logo.png);
   background-position: center;
@@ -286,37 +269,15 @@ background-image: url(/images/batgirl.jpg);
 @media (min-width: 560px) {
 
   .nav-tabs {
-    /*margin: 0;*/
-    /*display: flex;*/
     width: 80%;
     align-items: flex-end;
-    /*justify-content: space-between;*/
-    /*align-items: flex-start;*/
-    /*justify-content: space-around;*/
     height: 80px;
     justify-content: flex-start;
-    /*flex-wrap: wrap;*/
-    /*padding: 0 0 0 10px;*/
     flex-direction: row;
-    /*margin-left: 10px;*/
-    /*background-color: red;*/
     margin-bottom: 20px;
   }
   .tab {
-    /*text-align: right;*/
-    /*color: #777777;*/
-    /*margin: 0;*/
-    /*display: inline-block;*/
-    /*width: 33.3333%;*/
     width: 110px;
-    /*text-transform: uppercase;*/
-    /*font-size: 16px;*/
-    /*height: 100px;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 20px;*/
-    /*background-position: 0px;*/
-    /*padding: 0 0 0 10px;*/
-    /*background-position: 1px;*/
     margin: 0 20px;
   }
 
