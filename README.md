@@ -2,7 +2,7 @@
 ## Challenge
 Recreate the static comp and make it responsive
 ## Original
-![Original Comp](screenshots/original.jpg)
+![Original Comp](screenshots/original-version.jpg)
 
 ## My Version (normal)
 ![My Version Comp](screenshots/my-version.png)
